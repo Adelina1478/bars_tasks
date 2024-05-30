@@ -1,0 +1,23 @@
+    <html>
+   
+        <head>
+            <meta charset="UTF-8">
+            <title>Секретная комбинация</title>
+        </head>
+        <body>
+            <h1>Секретная комбинация</h1>
+        
+            <script>
+                let keysPressed = [];
+        
+                document.addEventListener('keydown', function(event) {
+                    keysPressed.push(event.key);
+        
+                    if (keysPressed.includes('n') && keysPressed.includes('s')) {
+                        alert('Добро пожаловать!');
+                        keysPressed = []; // Очищаем массив после успешного входа
+                    }
+                });
+            </script>
+        </body>
+        </html>

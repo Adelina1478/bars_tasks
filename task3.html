@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title> Заадание 3</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Ссылка 1</li>
+        <li>Ссылка 2</li>
+        <li>Ссылка 3</li>
+    </ul>
+
+    <script>
+        const list = document.getElementById('myList');
+        list.addEventListener('click', function(event) {
+            if (event.target.tagName === 'LI') {
+                console.log(event.target.textContent);
+            }
+        });
+    </script>
+</body>
+</html>

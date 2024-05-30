@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1 > изменяем цвет фона</h1>
+        <input type = "button" value = "button1" id ="button1">
+    </body>
+</html>
+<script> 
+    const button1 = document.getElementById('button1');
+    button1.addEventListener('click', function(){
+        
+        const fon = Math.floor(Math.random() * 1000000);
+        document.body.style.backgroundColor = fon;
+    });
+
+
+</script>
